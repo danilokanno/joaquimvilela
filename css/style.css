@@ -259,6 +259,27 @@ a{
   background:var(--surface-2);
 }
 
+.listas-duas-colunas{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+.lista-coluna{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+
+.lista-coluna h3{
+  margin:0 0 14px;
+  font-size:1.2rem;
+  color:var(--primary-strong);
+  text-align:center;
+}
+
 .grid-listas{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
@@ -369,6 +390,12 @@ a{
   color:var(--muted);
 }
 
+@media (min-width: 900px){
+  .listas-duas-colunas{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
 @media (max-width: 768px){
   .hero{
     padding:24px 16px;
@@ -402,5 +429,9 @@ a{
 
   .prova-card{
     padding:20px;
+  }
+
+  .listas-duas-colunas{
+    grid-template-columns:1fr;
   }
 }
