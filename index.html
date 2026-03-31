@@ -1,57 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof. Danilo Kanno - Matemática</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prof. Danilo Kanno - Matemática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>🧮 Materiais de Matemática - Prof. Danilo Kanno</h1>
-        <nav>
-            <a href="#avisos">Avisos</a>
-            <a href="#exercicios">Listas de Exercícios</a>
-            <a href="#materiais">Materiais de Apoio</a>
-        </nav>
-    </header>
+  <header class="topo">
+    <div class="topo-inner">
+      <div class="perfil">
+        <img src="imagens/foto-professor.jpg" alt="Foto do Professor Danilo Kanno" class="foto-perfil">
+        <div class="perfil-texto">
+          <span class="tag">Portal de Matemática</span>
+          <h1>Prof. Danilo Kanno</h1>
+          <p>Listas de exercícios, materiais de apoio, avisos e conteúdos para o Fundamental II e Ensino Médio.</p>
+        </div>
+      </div>
 
-    <section id="avisos">
-        <h2>Avisos</h2>
-        <ul>
-            <li>Próva de Álgebra dia 15/04 - Estude funções quadráticas.</li>
-            <li>Recuperação aberta até 20/04.</li>
-        </ul>
+      <nav class="menu">
+        <a href="#avisos">Avisos</a>
+        <a href="#provas">Matérias</a>
+        <a href="#listas">Listas</a>
+        <a href="#materiais">Materiais</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-slide active">
+        <div>
+          <span class="hero-kicker">Bem-vindo</span>
+          <h2>Matemática com organização e acesso rápido aos conteúdos</h2>
+          <p>Encontre listas, recados e materiais de estudo em um só lugar.</p>
+        </div>
+      </div>
+
+      <div class="hero-slide">
+        <div>
+          <span class="hero-kicker">Avisos</span>
+          <h2>Fique atento às datas de provas e recuperação</h2>
+          <p>As informações importantes aparecem aqui em destaque.</p>
+        </div>
+      </div>
+
+      <div class="hero-slide">
+        <div>
+          <span class="hero-kicker">Estudos</span>
+          <h2>Conteúdos separados por tema e turma</h2>
+          <p>Mais fácil para seus alunos encontrarem o que precisam.</p>
+        </div>
+      </div>
+
+      <button class="hero-btn hero-btn-prev" id="prevSlide" aria-label="Slide anterior">‹</button>
+      <button class="hero-btn hero-btn-next" id="nextSlide" aria-label="Próximo slide">›</button>
     </section>
 
-    <section id="listas">
-  <h2>Listas de Exercícios</h2>
-  <ul>
-    <li><a href="Listas/Áreas_I.pdf" target="_blank">Áreas I</a></li>
-    <li><a href="Listas/Equação_do_1º_Grau.pdf" target="_blank">Equação do 1º Grau</a></li>
-    <li><a href="Listas/Números_Inteiros.pdf" target="_blank">Números Inteiros</a></li>
-    <li><a href="Listas/Números_Racionais.pdf" target="_blank">Números Racionais</a></li>
-    <li><a href="Listas/Potenciação.pdf" target="_blank">Potenciação</a></li>
-    <li><a href="Listas/Radiciação.pdf" target="_blank">Radiciação</a></li>
-    <li><a href="Listas/Semelhança_de_Triângulos.pdf" target="_blank">Semelhança_de_Triângulos</a></li>
-    <li><a href="Listas/Sistemas_de_Equações.pdf" target="_blank">Sistemas de Equações</a></li>
-    <li><a href="Listas/Teorema_de_Pitágoras.pdf" target="_blank">Teorema de Pitágoras</a></li>
+    <section id="avisos" class="secao">
+      <div class="secao-cabecalho">
+        <span class="tag secao-tag">Avisos</span>
+        <h2>Informações importantes</h2>
+      </div>
 
-  </ul>
-</section>
+      <div class="grid-cards">
+        <article class="card destaque">
+          <h3>Prova de Álgebra</h3>
+          <p>Dia 15/04. Estude funções quadráticas, gráficos e interpretação de enunciados.</p>
+        </article>
 
-    <section id="materiais">
-        <h2>Materiais de Apoio</h2>
-        <ul>
-            <li><a href="materiais/aulas-equacoes.pdf">Aula sobre Equações</a></li>
-            <li><a href="materiais/video-geometria.mp4">Vídeo de Geometria</a></li>
-        </ul>
+        <article class="card">
+          <h3>Recuperação</h3>
+          <p>Disponível até 20/04. Consulte os materiais indicados na página.</p>
+        </article>
+
+        <article class="card">
+          <h3>Entrega de atividades</h3>
+          <p>Verifique sempre os prazos publicados na seção de avisos.</p>
+        </article>
+      </div>
     </section>
 
-    <footer>
-        <p>Contato: danilokanno@prof.educacao.sp.gov.br | Escola Estadual Joaquim Vilela de Oliveira Marcondes</p>
-    </footer>
+    <section id="provas" class="secao">
+      <div class="secao-cabecalho">
+        <span class="tag secao-tag">Matérias</span>
+        <h2>Conteúdos das provas</h2>
+      </div>
 
-    <script src="js/script.js"></script>
+      <div class="grid-cards">
+        <article class="card">
+          <h3>Fundamental II</h3>
+          <p>Equações do 1º grau, números inteiros, frações, áreas e proporções.</p>
+        </article>
+
+        <article class="card">
+          <h3>1º ano EM</h3>
+          <p>Função quadrática, trigonometria, progressões e matemática financeira.</p>
+        </article>
+
+        <article class="card">
+          <h3>2º e 3º anos</h3>
+          <p>Probabilidade, estatística, geometria analítica, matrizes e funções.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="listas" class="secao">
+      <div class="secao-cabecalho">
+        <span class="tag secao-tag">Listas</span>
+        <h2>Listas de exercícios</h2>
+      </div>
+
+      <div class="grid-listas">
+        <a class="lista-item" href="Listas/Áreas_I.pdf" target="_blank">Áreas I</a>
+        <a class="lista-item" href="Listas/Equação_do_1º_Grau.pdf" target="_blank">Equação do 1º Grau</a>
+        <a class="lista-item" href="Listas/Números_Inteiros.pdf" target="_blank">Números Inteiros</a>
+        <a class="lista-item" href="Listas/Números_Racionais.pdf" target="_blank">Números Racionais</a>
+        <a class="lista-item" href="Listas/Potenciação.pdf" target="_blank">Potenciação</a>
+        <a class="lista-item" href="Listas/Radiciação.pdf" target="_blank">Radiciação</a>
+        <a class="lista-item" href="Listas/Semelhança_de_Triângulos.pdf" target="_blank">Semelhança de Triângulos</a>
+        <a class="lista-item" href="Listas/Sistemas_de_Equações.pdf" target="_blank">Sistemas de Equações</a>
+        <a class="lista-item" href="Listas/Teorema_de_Pitágoras.pdf" target="_blank">Teorema de Pitágoras</a>
+      </div>
+    </section>
+
+    <section id="materiais" class="secao">
+      <div class="secao-cabecalho">
+        <span class="tag secao-tag">Materiais</span>
+        <h2>Materiais de apoio</h2>
+      </div>
+
+      <div class="grid-cards">
+        <article class="card">
+          <h3>Aula sobre Equações</h3>
+          <p><a href="materiais/aulas-equacoes.pdf" target="_blank">Abrir material</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Vídeo de Geometria</h3>
+          <p><a href="materiais/video-geometria.mp4" target="_blank">Assistir vídeo</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Outros apoios</h3>
+          <p>Espaço para apostilas, resumos, listas extras e links úteis.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Contato: danilokanno@prof.educacao.sp.gov.br | Escola Estadual Joaquim Vilela de Oliveira Marcondes</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
