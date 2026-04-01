@@ -16,7 +16,7 @@
         <div class="perfil-texto">
           <span class="tag">Portal de Matemática</span>
           <h1>Notas dos alunos</h1>
-          <p>Selecione a turma e o bimestre para consultar as notas disponibilizadas.</p>
+          <p>Consulta de notas por turma e RA, com colunas geradas automaticamente a partir do arquivo CSV.</p>
         </div>
       </div>
 
@@ -31,28 +31,26 @@
       <div class="secao-cabecalho">
         <span class="tag secao-tag">Notas</span>
         <h2>Consulta de notas</h2>
+        <p>Selecione a turma para visualizar as avaliações do bimestre.</p>
       </div>
 
-      <div class="grid-cards">
-        <article class="card">
-          <h3>9ºA - 1º Bimestre</h3>
-          <p>Espaço para publicar notas, médias e observações da turma.</p>
-        </article>
+      <div class="tabela-controle">
+        <label for="turmaSelecionada">Turma:</label>
+        <select id="turmaSelecionada">
+          <option value="">Todas</option>
+        </select>
+      </div>
 
-        <article class="card">
-          <h3>9ºB - 1º Bimestre</h3>
-          <p>Espaço para publicar notas, médias e observações da turma.</p>
-        </article>
+      <div id="loadingNotas" class="tabela-status">Carregando notas...</div>
+      <div id="erroNotas" class="tabela-status tabela-erro" style="display:none;">
+        Não foi possível carregar o arquivo de notas.
+      </div>
 
-        <article class="card">
-          <h3>8ºA - 1º Bimestre</h3>
-          <p>Espaço para publicar notas, médias e observações da turma.</p>
-        </article>
-
-        <article class="card">
-          <h3>7ºA - 1º Bimestre</h3>
-          <p>Espaço para publicar notas, médias e observações da turma.</p>
-        </article>
+      <div class="tabela-wrapper" id="wrapperTabelaNotas" style="display:none;">
+        <table class="tabela-notas" id="tabelaNotas">
+          <thead id="cabecalhoNotas"></thead>
+          <tbody id="corpoTabelaNotas"></tbody>
+        </table>
       </div>
     </section>
   </main>
@@ -60,5 +58,7 @@
   <footer class="rodape">
     <p>Contato: danilokanno@prof.educacao.sp.gov.br | Escola Estadual Joaquim Vilela de Oliveira Marcondes</p>
   </footer>
+
+  <script src="js/notas-script.js"></script>
 </body>
 </html>
