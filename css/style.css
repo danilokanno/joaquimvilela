@@ -192,11 +192,11 @@ a{
 }
 
 .hero-btn-prev{
-  left:14px;
+  left:-14px;
 }
 
 .hero-btn-next{
-  right:14px;
+  right:-14px;
 }
 
 .secao{
