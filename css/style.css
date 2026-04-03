@@ -542,3 +542,8 @@ a{
   color:var(--text);
   font-weight:800;
 }
+
+.imagem-responsiva {
+    max-width: 100%;
+    height: auto;
+}
