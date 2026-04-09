@@ -122,6 +122,10 @@ a{
   padding:26px 20px 54px;
 }
 
+.container.container-full {
+  max-width: 75%; /* Ocupa quase toda a largura da tela */
+}
+
 .hero{
   position:relative;
   overflow:hidden;
