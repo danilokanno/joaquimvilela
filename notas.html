@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notas - Prof. Danilo Kanno</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - Prof. Danilo Kanno</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="topo">
+<header class="topo">
     <div class="topo-inner">
-      <div class="perfil">
-        <div class="perfil-texto">
-          <span class="tag">Portal de Matemática</span>
-          <h1>Notas dos alunos</h1>
-          <p>Consulta de notas por turma e RA. OBS: a média dos alunos de DP é composta exclusivamente das provas Mensal I e Mensal II.</p>
+        <div class="perfil">
+            <div class="perfil-texto">
+                <span class="tag">Portal de Matemática</span>
+                <h1>Notas dos alunos</h1>
+                <p>Selecione o bimestre e a turma para visualizar as notas.</p>
+            </div>
         </div>
-      </div>
-
-      <nav class="menu">
-        <a href="index.html">Voltar ao início</a>
-      </nav>
+        <nav class="menu">
+            <a href="index.html">Voltar ao início</a>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <main class="container container-full">
+<main class="container container-full">
+
     <section class="secao">
-      <div class="secao-cabecalho">
-        <span class="tag secao-tag">Notas</span>
-        <h2>Consulta de notas</h2>
-        <p>Selecione a turma para visualizar as avaliações do bimestre.</p>
-      </div>
+        <div class="secao-cabecalho">
+            <span class="tag secao-tag">Notas</span>
+            <h2>Consulta de notas</h2>
+            <p>Escolha o bimestre para exibir o arquivo correspondente.</p>
+        </div>
 
-      <div class="tabela-controle">
-        <label for="turmaSelecionada">Turma:</label>
-        <select id="turmaSelecionada">
-          <option value="">Todas</option>
-        </select>
-      </div>
+        <!-- Abas -->
+        <div class="tabela-controle" style="margin-bottom: 25px;">
+            <button class="tab-btn active" data-csv="notas-1bim.csv">1º Bimestre</button>
+            <button class="tab-btn" data-csv="notas-2bim.csv">2º Bimestre</button>
+        </div>
 
-      <div id="loadingNotas" class="tabela-status">Carregando notas...</div>
-      <div id="erroNotas" class="tabela-status tabela-erro" style="display:none;">
-        Não foi possível carregar o arquivo de notas.
-      </div>
+        <!-- Filtro de Turma -->
+        <div class="tabela-controle">
+            <label for="turmaSelecionada">Turma:</label>
+            <select id="turmaSelecionada">
+                <option value="">Todas</option>
+            </select>
+        </div>
 
-      <div class="tabela-wrapper" id="wrapperTabelaNotas" style="display:none;">
-        <table class="tabela-notas" id="tabelaNotas">
-          <thead id="cabecalhoNotas"></thead>
-          <tbody id="corpoTabelaNotas"></tbody>
-        </table>
-      </div>
+        <!-- Tabela -->
+        <div class="tabela-wrapper">
+            <table class="tabela-notas">
+                <thead id="cabecalhoNotas">
+                    <tr><th>Carregando...</th></tr>
+                </thead>
+                <tbody id="corpoTabelaNotas"></tbody>
+            </table>
+        </div>
     </section>
-  </main>
 
-  <footer class="rodape">
+</main>
+
+<footer class="rodape">
     <p>Contato: danilokanno@prof.educacao.sp.gov.br | Escola Estadual Joaquim Vilela de Oliveira Marcondes</p>
-  </footer>
+</footer>
 
-  <script src="js/notas-script.js"></script>
+<script src="js/notas-script.js"></script>
+
 </body>
 </html>
