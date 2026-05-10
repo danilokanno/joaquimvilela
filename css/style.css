@@ -576,3 +576,62 @@ a{
   border-color: var(--primary-strong);
   transform: translateY(-1px);
 }
+
+.foto-card {
+  overflow: hidden;
+}
+
+.foto-img {
+  width: 100%;
+  height: 200px;        /* tamanho da miniatura */
+  object-fit: cover;    /* garante que corte sem deformar */
+  border-radius: var(--radius);
+}
+
+/* LIGHTBOX — ESTILO PADRÃO */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 42px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Efeito de hover nas miniaturas da galeria */
+.foto-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.foto-img {
+  cursor: pointer;          /* 1) mostra que é clicável */
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.foto-img:hover {
+  transform: scale(1.04);   /* 2) leve aumento */
+  filter: brightness(0.88); /* 3) escurece um pouco para realçar o clique */
+}
