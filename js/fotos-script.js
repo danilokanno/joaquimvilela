@@ -23,6 +23,7 @@ const aprovacoes = [
   { src: "imagens/fotos/aprovacoes/kayoadriel.jpg", legenda: "Kayo Adriel - Aprovado na ETEC, COTEC e COTEL 2026" },
   { src: "imagens/fotos/aprovacoes/kayopedro.jpg", legenda: "Kayo e Pedro Henrique - Aprovado na ETEC, COTEC e COTEL 2026" },
   { src: "imagens/fotos/aprovacoes/miguelarlindo.png", legenda: "Miguel Arlindo - Aprovado na ETEC 2026" },
+  { src: "imagens/fotos/aprovacoes/mylenarabelo.png", legenda: "Mylena Rabelo - Aprovada na ETEC 2026" },
   { src: "imagens/fotos/aprovacoes/joaopedro.jpg", legenda: "João Pedro - Aprovado na ETEC 2026" }
 
 ];
