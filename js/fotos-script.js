@@ -2,6 +2,7 @@
 // LISTAS DE FOTOS POR SEÇÃO
 // ===============================
 
+/*
 const aprovacoes = [
   { src: "imagens/fotos/aprovacoes/liviatoledo.jpg", legenda: "Lívia Toledo - Aprovada na ETEC e COTEC 2026" },
   { src: "imagens/fotos/aprovacoes/yasminsiqueira.jpg", legenda: "Yasmin Siqueira - Aprovada na ETEC e COTEC 2026" },
@@ -143,3 +144,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderGaleria("aprovacoes", aprovacoes);
   renderGaleria("trotes", trotes);
 });
+
+*/
