@@ -635,3 +635,41 @@ a{
   transform: scale(1.04);   /* 2) leve aumento */
   filter: brightness(0.88); /* 3) escurece um pouco para realçar o clique */
 }
+
+/* DIVISÓRIA ENTRE LISTAS NORMAIS E CURSO ALVO */
+.listas-grupo {
+  margin-bottom: 10px;
+}
+
+.listas-subtitulo {
+  font-size: 1.1rem;
+  color: var(--primary-strong);
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.listas-divisoria {
+  border: none;
+  border-top: 2px dashed var(--line);
+  margin: 28px 0;
+  width: 100%;
+}
+
+.listas-alvo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.listas-alvo-header .listas-subtitulo {
+  margin: 0;
+}
+
+.logo-alvo-mini {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 8px;
+}
